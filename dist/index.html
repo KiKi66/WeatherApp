@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f81e6066d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
   <body>
-    <script src="../src/index.js"></script>
+    <div class="container">
+      <div class="search-bar">
+        <i class="fa-solid fa-location-dot icon"></i>
+        <input type="text" id="search" placeholder="City or Zipcode" />
+        <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+      </div>
+      <div class="current"></div>
+      <div class="forecast-temp"></div>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
